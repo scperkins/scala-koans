@@ -13,7 +13,7 @@ class AboutMethods extends KoanSuite {
     def add(x: Int, y: Int) = {
       x + y
     }
-    add(6, 7) should be(__)
+    add(6, 7) should be(13)
   }
 
   koan(
@@ -23,7 +23,7 @@ class AboutMethods extends KoanSuite {
       //Notice the :Int at the end of the method
       x + y
     }
-    add(2, 10) should be(__)
+    add(2, 10) should be(12)
   }
 
 
@@ -39,14 +39,14 @@ class AboutMethods extends KoanSuite {
       else x + y
     }
 
-    add(2, 10) should be(__)
-    add(1, 1) should be(__)
+    add(2, 10) should be(12)
+    add(1, 1) should be(2)
   }
 
 
   koan( """If a method does not of have equal it is considered `Unit` which is analogous to `void` in Java""") {
     def foo(x: Int) { //Note: No `=`
-      (x + 4) should be(__)
+      (x + 4) should be(9)
     }
     foo(5)
   }
