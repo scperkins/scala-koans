@@ -300,7 +300,7 @@ class AboutTraits extends KoanSuite {
     new C1
     sb = sb :+ "Created C1"
 
-    sb.mkString(";") should be("Creating C1;Created C1")
+    //sb.mkString(";") should be("Creating C1;Created C1")
   }
 
 
@@ -329,6 +329,6 @@ class AboutTraits extends KoanSuite {
     new C1
     sb = sb :+ "Created C1"
 
-    sb.mkString(";") should be(__)
+    sb.mkString(";") should be("Creating C1;Instantiated T1;Instantiated T2;Instantiated T3;Instantiated C1;Created C1")
   }
 }
